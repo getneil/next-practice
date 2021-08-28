@@ -32,6 +32,7 @@ The assumption is that the postgres database is already running
 
 ### create the table and seed some initial data
 ```
+$ npm install
 $ npm run migrate:up
 $ npm run seed:all
 ```
