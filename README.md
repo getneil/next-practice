@@ -27,6 +27,24 @@ The following links may help you understand the scaffolded structure of the appl
 
 If you are more comfortable with a different set of technologies, please feel free to use them and document how to get started in this README.
 
+## Setting Up Dev Environment
+The assumption is that the postgres database is already running
+
+### create the table and seed some initial data
+```
+$ npm install
+$ npm run migrate:up
+$ npm run seed:all
+```
+
+### development
+```
+// dev
+$ npm run dev
+// testing
+$ npm test
+```
+
 ## Task
 
 Create a basic gallery to display media items.
@@ -57,3 +75,13 @@ Create a basic gallery to display media items.
    - `e-r-w`
 
 If you have any questions, please raise a Gitlab issue against this repository and tag `e-r-w` in it. If you have any privacy concerns you may alternatively contact Tex directly.
+
+## Todo
+
+- initialize migration and seed for sequelize
+- routing between DogListPage and DogEditPage
+  - automatic?
+- DogComponent
+  - img and video detect type? does .mp4 also works with img?
+    - it seem Next.js has an Image component
+- DogForm
